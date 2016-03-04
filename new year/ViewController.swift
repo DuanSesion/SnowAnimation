@@ -9,17 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var imageV    : DSXSnowAnimation!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configUI()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func configUI(){
+       
+        imageV = DSXSnowAnimation()
+        self.view.addSubview(imageV)
+        
+        let button = UIButton()
+        button.frame = CGRectMake(100, 100, 30, 30)
+        button.backgroundColor = UIColor.redColor()
+        
+        button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
     }
-
-
+    
+    func click(sender:UIButton){
+      
+        sender.selected = !sender.selected
+        
+        if(sender.selected){
+           imageV.start()
+        }else{
+           imageV.stop()
+        }
+     
+    }
+ 
 }
 

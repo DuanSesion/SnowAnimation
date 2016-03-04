@@ -12,6 +12,9 @@
 		C0F95EDC1C8957C5007C6314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F95EDA1C8957C5007C6314 /* Main.storyboard */; };
 		C0F95EDE1C8957C5007C6314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F95EDD1C8957C5007C6314 /* Assets.xcassets */; };
 		C0F95EE11C8957C5007C6314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F95EDF1C8957C5007C6314 /* LaunchScreen.storyboard */; };
+		C0F95EED1C89583D007C6314 /* news.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0F95EEC1C89583D007C6314 /* news.bundle */; };
+		C0F95EF21C895BFA007C6314 /* File in Resources */ = {isa = PBXBuildFile; fileRef = C0F95EF11C895BFA007C6314 /* File */; };
+		C0F95EF71C8963DA007C6314 /* DSXSnowAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F95EF61C8963DA007C6314 /* DSXSnowAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		C0F95EDD1C8957C5007C6314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F95EE01C8957C5007C6314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0F95EE21C8957C5007C6314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F95EE81C8957F8007C6314 /* new year-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "new year-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0F95EEC1C89583D007C6314 /* news.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = news.bundle; sourceTree = "<group>"; };
+		C0F95EF11C895BFA007C6314 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		C0F95EF61C8963DA007C6314 /* DSXSnowAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSXSnowAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,10 @@
 				C0F95EDD1C8957C5007C6314 /* Assets.xcassets */,
 				C0F95EDF1C8957C5007C6314 /* LaunchScreen.storyboard */,
 				C0F95EE21C8957C5007C6314 /* Info.plist */,
+				C0F95EE81C8957F8007C6314 /* new year-Bridging-Header.h */,
+				C0F95EEC1C89583D007C6314 /* news.bundle */,
+				C0F95EF11C895BFA007C6314 /* File */,
+				C0F95EF61C8963DA007C6314 /* DSXSnowAnimation.swift */,
 			);
 			path = "new year";
 			sourceTree = "<group>";
@@ -122,9 +133,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F95EED1C89583D007C6314 /* news.bundle in Resources */,
 				C0F95EE11C8957C5007C6314 /* LaunchScreen.storyboard in Resources */,
 				C0F95EDE1C8957C5007C6314 /* Assets.xcassets in Resources */,
 				C0F95EDC1C8957C5007C6314 /* Main.storyboard in Resources */,
+				C0F95EF21C895BFA007C6314 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +150,7 @@
 			files = (
 				C0F95ED91C8957C5007C6314 /* ViewController.swift in Sources */,
 				C0F95ED71C8957C5007C6314 /* AppDelegate.swift in Sources */,
+				C0F95EF71C8963DA007C6314 /* DSXSnowAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +261,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "new year/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanzi.new-year";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "new year/new year-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -258,10 +275,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "new year/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanzi.new-year";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "new year/new year-Bridging-Header.h";
 			};
 			name = Release;
 		};
