@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         button.frame = CGRectMake(100, 100, 30, 30)
         button.backgroundColor = UIColor.redColor()
         
-        button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.click(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
     }
     
