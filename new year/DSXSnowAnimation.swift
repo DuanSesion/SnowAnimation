@@ -17,7 +17,7 @@ class DSXSnowAnimation: UIImageView {
      *
      *  @return
      */
-    func start(){
+    func start(){//llll
       
         self.image = UIImage.init(named: "news.bundle/background.jpg")
         self.frame = UIScreen.mainScreen().bounds
